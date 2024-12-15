@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MUSIC PLAYER</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     <div class="container"></div>
+     <header>
+      <img src="playlist.svg" alt="playlist" id="playlist-img">
+        <h2>FEEL THE SONG</h2>
+        <img src="music.svg" alt="music" id="music-img">
+     </header>
+     <main>
+        <div class="left">
+<div class="song-image">
+<img src="music1.gif" alt="music" id="music-gif">
+</div>
+<div class="volume-div">
+   <div class="volume-img">
+    <img src="volume.svg" alt="volume" id="vol-svg">
+   </div>
+   <input type="range" id="volume-range" onchange="volume()">
+</div>
+        </div>
+        <div class="right">
+         <div class="details">
+            <h3 id="song-name">satranga</h3>
+            <h5 id="song-singer">singer -- Arijit Singh</h5>
+         </div>
+    <input type="range" id="song-duration" onchange="duration()">
+    <div class="control">
+      <div class="previous-img">
+         <img src="previous.svg" alt="previous" id="previous-img"  onclick="previousSong()">
+      </div>
+      <div class="play-pause">
+         <img src="play.svg" alt="play" id="play-pause" onclick="playpause()">
+      </div>
+      <div class="next-img">
+         <img src="next.svg" alt="next" id="next-img"  onclick="nextSong()">
+      </div>
+    </div>
+        </div>
+        <div class="playlist">
+         <div class="playlist-song">
+            <img src="satranga.png" alt="satranga">
+            <div class="song-details">
+               <h2>satranga</h2>
+               <h3>Arijit Singh</h3>
+            </div>
+         </div>
+         <div class="playlist-song">
+            <img src="husn.png" alt="husn">
+            <div class="song-details">
+               <h2>husn</h2>
+               <h3>Anuv Jain</h3>
+            </div>
+         </div>
+         <div class="playlist-song">
+            <img src="Meri_Maa.png" alt="Meri_Maa">
+            <div class="song-details">
+               <h2>Meri_Maa</h2>
+               <h3>Pritam,KK</h3>
+            </div>
+         </div>
+         <div class="playlist-song">
+            <img src="zaroor.png" alt="zaroor">
+            <div class="song-details">
+               <h2>zaroor</h2>
+               <h3>Aparshakti Khurana</h3>
+            </div>
+         </div>
+        </div>
+     </main>
+    <script src="script.js"></script>
+</body>
+</html>
